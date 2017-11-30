@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html ng-app="counter">
+  <head>
+    <title>AngularJS Counter</title>
+  </head>
+
+  <body ng-controller="CounterController as counter"> <!-- takes a string and an alias for that controller(instance of the controller) -->
+    <p>Count: {{ counter.number }}</p> <!-- accessing the number property of our controller by using the counter alias-->
+    <button id="increment" ng-click="counter.increment()">Increment</button>
+    <button id="decrement" ng-click="counter.decrement()">Decrement</button>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular.js"></script>
+    <script src="app.js"></script>
+  </body>
+
+</html>
